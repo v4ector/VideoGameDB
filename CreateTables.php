@@ -82,9 +82,14 @@ CREATE TABLE BelongsTo(
 	foreign key(game_id) references Game(game_id),
 	foreign key(platform_id) references Platform(platform_id)
 );";
-if (!$conn->query($sql)) {
-    echo $conn->error;
-}
+
+if($conn->query($sql) === TRUE){ 
+	echo "Tables were successfully created."; 
+} 
+else{ 
+	echo "ERROR: Could not able to execute $sql. " 
+								. $conn->error; 
+} 
 
 $conn->close();
 
