@@ -15,47 +15,52 @@
     <p>An interactive game database designed for CS 6750, Spring 2019!</p>
 </div>
 
-<div class="container-fluid bg-3 text-center">
-    <h3>View All the Games</h3>
-    <form action="ViewGameTable.php" method="post">
-        <input type="submit" value="Let's go!">
-    </form>
-</div><br>
-
 <div class="container">
     <div class="row">
-
-        <!-- <div class="col-sm-3">
-            <h3>Create Tables</h3>
-            <form action="CreateTables.php" method="post">
-            <input type="submit" value="Create">
-            </form>
-        </div> -->
-
         <div class="col-sm-3">
-            <h3>Insert Values</h3>
-            <p>Click to populate database with values</p>
-            <a href="Insert.html"><button type="button" class="btn btn-primary">Insert Values</button></a>
+            <h3>Post Games</h3>
+            <p>Click to add new games</p>
+            <a href="InsertGame.html"><button type="button" class="btn btn-primary">Post</button></a>
         </div>
 
         <div class="col-sm-3">
-            <h3>Delete Values</h3>
-            <p>Click to delete entires inside the database</p>
-            <a href="Delete.html"><button type="button" class="btn btn-primary">Delete Values</button></a>
+            <h3>Post Platforms</h3>
+            <p>Click to add new platforms</p>
+            <a href="InsertPlatform.html"><button type="button" class="btn btn-primary">Post</button></a>
         </div>
 
         <div class="col-sm-3">
-            <h3>Update Values</h3>
-            <p>Click to update database's entries</p>
-            <a href="Update.html"><button type="button" class="btn btn-primary">Update Values</button></a>
+            <h3>Post Game Developers</h3>
+            <p>Click to add new developers</p>
+            <a href="InsertDeveloper.html"><button type="button" class="btn btn-primary">Post</button></a>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <h3>Modify Games</h3>
+            <p>Click to view, update or delete games</p>
+            <a href="ViewGame.php"><button type="button" class="btn btn-primary">Modify</button></a>
+        </div>
+
+        <div class="col-sm-3">
+            <h3>Modify Platforms</h3>
+            <p>Click to view, update or delete platforms</p>
+            <a href="ViewPlatform.php"><button type="button" class="btn btn-primary">Modify</button></a>
+        </div>
+
+        <div class="col-sm-3">
+            <h3>Modify Developers</h3>
+            <p>Click to view, update or delete developers</p>
+            <a href="ViewDeveloper.php"><button type="button" class="btn btn-primary">Modify</button></a>
         </div>
 
         <div class="col-sm-3">
             <h3>Special Queries</h3>
-            <p>Click here to perform special queries</p>
-            <a href="Special.html"><button type="button" class="btn btn-primary">Perform Queries</button></a>
+            <p>Performs special Queries</p>
+            <a href="Special.html"><button type="button" class="btn btn-primary">Special Queries</button></a>
         </div>
-
     </div>
 </div>
 
